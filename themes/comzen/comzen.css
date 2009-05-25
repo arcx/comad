@@ -46,6 +46,9 @@
 /** header **/
   #header
   {
+		background: red url(imagenes/cabacera-fondo.jpg);
+		height: 50px;
+		width:960px;
   }
 
   #header-inner
