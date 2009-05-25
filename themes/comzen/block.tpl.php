@@ -29,7 +29,15 @@
  * @see template_preprocess_block()
  */
 ?>
-<div id="block-<?php print $block->module . '-' . $block->delta; ?>" class="curved <?php print $classes; ?>"><div class="block-inner">
+
+<?php 
+$colors = array('red', 'green', 'blue');
+  $rand = rand(0, 2);
+  $color = $colors[$rand];
+?>
+
+
+<div id="block-<?php print $block->module . '-' . $block->delta; ?>" class="<?php print $color ?> curved <?php print $classes; ?>"><div class="block-inner">
 
   <?php if ($block->subject): ?>
     <h2 class="title"><?php print $block->subject; ?></h2>

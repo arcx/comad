@@ -33,7 +33,7 @@
   {
     margin: 0;
     padding: 10px;
-    background: #eee;
+    background: #ccc;
   }
 
   #page
@@ -100,6 +100,7 @@
 /** main (container for everything else) **/
   #main
   {
+    margin-top: 10px;
   }
 
   #main-inner
@@ -121,6 +122,8 @@
 
   #content-top /* Wrapper for any blocks placed in the "content top" region */
   {
+    background: white;
+    padding: 10px;
   }
 
   #content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
@@ -238,6 +241,7 @@
 
   #sidebar-right-inner
   {
+    background: white;
   }
 
 /** footer **/
@@ -485,18 +489,28 @@
 /** Drupal blocks **/
 
 #content-top .block {
-  width: 300px;
 }
 
 .block{
-  width:160px;
-  border:#000 solid 2px;
-  margin-bottom:20px;
+  border:#aaa solid 1px;
+  margin-bottom:10px;
   background: white;
 }
 
+#content .red.curved.block {
+  border: #f00 solid 1px;
+}
+
+#content .blue.curved.block {
+  border: #00f solid 1px;
+}
+
+#content .green.curved.block {
+  border: #0f0 solid 1px;
+}
+
   .block .block-inner {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
   }
   
   div.block.img{
