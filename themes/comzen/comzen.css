@@ -47,9 +47,9 @@
 /** header **/
   #header
   {
-  background: red url(imagenes/cabacera-fondo.jpg); 
+  background: url(imagenes/cabacera-fondo.jpg); 
   width:960px;
-  height:150px;
+  height:50px;
   }
 
   #header-inner
@@ -100,7 +100,6 @@
 /** main (container for everything else) **/
   #main
   {
-    margin-top: 10px;
   }
 
   #main-inner
@@ -206,6 +205,9 @@
 
   #navbar-inner
   {
+    background: #4B5394;
+    height: 100px;
+    margin-bottom: 10px;
   }
 
   #search-box /* Wrapper for the search form */
@@ -220,6 +222,8 @@
   #primary /* Primary links */
   {
   }
+
+  #primary li a {color: white;}
 
   #secondary /* Secondary links */
   {

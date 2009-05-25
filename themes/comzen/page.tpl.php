@@ -104,9 +104,6 @@
   <div id="page"><div id="page-inner">
 
     <a name="top" id="navigation-top"></a>
-    <?php if ($primary_links || $secondary_links || $navbar): ?>
-      <div id="skip-to-nav"><a href="#navigation"><?php print t('Skip to Navigation'); ?></a></div>
-    <?php endif; ?>
 
     <div id="header"><div id="header-inner" class="clear-block">
 
@@ -147,6 +144,15 @@
       <?php endif; ?>
 
     </div></div> <!-- /#header-inner, /#header -->
+
+        <div id="navbar"><div id="navbar-inner" >
+          <?php if ($primary_links): ?>
+            <div id="primary">
+              <?php print theme('links', $primary_links); ?>
+            </div> <!-- /#primary -->
+          <?php endif; ?>
+          <?php print $navbar; ?>
+        </div></div> <!-- /#navbar-inner, /#navbar -->
 
     <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box || $primary_links || $secondary_links || $navbar) { print ' with-navbar'; } ?>">
 
@@ -192,33 +198,6 @@
 
       </div></div> <!-- /#content-inner, /#content -->
 
-      <?php if ($search_box || $primary_links || $secondary_links || $navbar): ?>
-        <div id="navbar"><div id="navbar-inner" class="clear-block region region-navbar">
-
-          <a name="navigation" id="navigation"></a>
-
-          <?php if ($search_box): ?>
-            <div id="search-box">
-              <?php print $search_box; ?>
-            </div> <!-- /#search-box -->
-          <?php endif; ?>
-
-          <?php if ($primary_links): ?>
-            <div id="primary">
-              <?php print theme('links', $primary_links); ?>
-            </div> <!-- /#primary -->
-          <?php endif; ?>
-
-          <?php if ($secondary_links): ?>
-            <div id="secondary">
-              <?php print theme('links', $secondary_links); ?>
-            </div> <!-- /#secondary -->
-          <?php endif; ?>
-
-          <?php print $navbar; ?>
-
-        </div></div> <!-- /#navbar-inner, /#navbar -->
-      <?php endif; ?>
 
       <?php if ($left): ?>
         <div id="sidebar-left"><div id="sidebar-left-inner" class="region region-left">
