@@ -77,13 +77,20 @@
  * @see template_preprocess_page()
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 
 <head>
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
   <?php print $styles; ?>
+  <!-- htc files need the full path written out for ie -->
+  <style type="text/css"> 
+    .curved {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+     behavior:url(<?php print base_path() . path_to_theme() ?>/border-radius.htc);
+  }
+  </style>
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $body_classes; ?>">
