@@ -219,7 +219,6 @@
           <?php print $left; ?>
         </div></div> <!-- /#sidebar-left-inner, /#sidebar-left -->
       <?php endif; ?>
-
       <?php if ($right): ?>
         <div id="sidebar-right"><div id="sidebar-right-inner" class="region region-right">
           <?php print $right; ?>

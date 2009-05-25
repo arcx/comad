@@ -108,6 +108,8 @@
   }
 
 /** content **/
+
+
   #content
   {
   }
@@ -122,8 +124,6 @@
 
   #content-top /* Wrapper for any blocks placed in the "content top" region */
   {
-    background: white;
-    padding: 10px;
   }
 
   #content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */

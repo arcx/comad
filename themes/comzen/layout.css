@@ -153,7 +153,7 @@
 
   .two-sidebars #content
   {
-    width: 460px;
+    width: 360px;
     margin-left: 300px; /* The width of #sidebar-left */
     margin-right: -760px; /* Negative value of #content's width + left margin. */
   }
