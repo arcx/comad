@@ -183,7 +183,7 @@
         <?php endif; ?>
 
         <div id="content-area">
-          <?php print $content; ?>
+          <?php !($is_front) ? print $content : null; ?>
         </div>
 
         <?php if ($feed_icons): ?>
